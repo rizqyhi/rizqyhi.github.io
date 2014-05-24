@@ -1,0 +1,11 @@
+/* humanstxt.org */
+                            
+/* TEAM */
+Your title: Rizqy Hidayat
+Site: http://hirizh.name
+Twitter: rizqyhi
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: Foundation, jQuery, FontAwesome, Google Webfonts, Modernizr, Backstretch, WOW.js
+Software: Sublime, Git, Jekyll
