@@ -1,0 +1,511 @@
+/* Batch font-face
+============================================= */
+@font-face{
+	font-family: Batch;
+	src: url('../fonts/batch-icons-webfont.eot');
+	src: url('../fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/batch-icons-webfont.woff') format('woff'),
+		 url('../fonts/batch-icons-webfont.ttf') format('truetype'),
+		 url('../fonts/batch-icons-webfont.svg#batchregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.batch {
+	font-family:"Batch"; /*or whatever you've decalred your font name as*/
+	font-size:16px;
+	line-height:1;
+	display:inline-block;
+	font-style: normal
+}
+.batch:before {
+	content:attr(data-icon);
+}
+.batch--natural { font-size:inherit; }
+
+
+/* Site wide styles
+============================================= */
+body {
+	background: #ECF0F1;
+	color: #666;
+}
+
+body, .button, select {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
+}
+
+
+/* Site header
+============================================= */
+.site-header {
+	height: 400px;
+	background: url("../img/slides/5.png") no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.site-header::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: rgba(134,76,160, 0.7)
+}
+
+.site-header .outer {
+	background: rgba(255,255,255,0.2);
+	position: relative;
+	z-index: 2
+}
+.site-header .row {
+	padding: 0
+}
+
+.main-nav {
+	background: none;
+}
+.main-nav .name a {
+	position: relative;
+	height: 8rem;
+	line-height: 8rem;
+	background: #8A5BA5;
+}
+
+.main-nav .top-bar-section li {
+	background: #8A5BA5
+}
+.main-nav .top-bar-section li:not(.has-form) a:not(.button){
+	background: none
+}
+.main-nav .top-bar-section ul li a {
+	font-family: "Lato", Arial, sans-serif;
+}
+
+@media only screen and (min-width: 40.063em) {
+	.main-nav .top-bar-section li {
+		background: none
+	}
+	.main-nav .top-bar-section > ul > li:not(.has-form) > a:not(.button) {
+		padding: 0 2rem;
+		line-height: 4rem;
+		font-size: 0.9375rem;
+		text-transform: uppercase;
+	}
+	.main-nav .top-bar-section > ul > li:not(.has-form):hover > a:not(.button) {
+		background: #ffb64e;
+	}
+	.main-nav .top-bar-section > ul > li:not(.has-form) > a:not(.button):hover,
+	.main-nav .top-bar-section > ul > li:not(.has-form).active > a:not(.button),
+	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+		background: #FFB64E
+	}
+	.top-bar-section .dropdown {
+		min-width: 10rem;
+	}
+	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+		line-height: 2.5rem
+	}
+	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
+		background: #FFB64E;
+		position: relative;
+	}
+	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 2px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: #fff;
+	}
+
+	.top-bar-section > ul > .has-dropdown > a:after {
+		display: none;
+	}
+	.main-nav .top-bar-section li a .batch {
+		position: relative;
+		display: block;
+		bottom: -15px;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 40.063em) {
+	.top-bar, .top-bar .name {
+		height: 6rem;
+	}
+	.top-bar .name a{
+		height: 6rem;
+		line-height: 6rem
+	}
+	.main-nav .top-bar-section li a .batch {
+		margin-right: 5px;
+	}
+}
+
+
+/* Site main and sections
+============================================= */
+.site-main {
+	position: relative;
+	top: -3.125rem;
+	z-index: 2;
+}
+
+.intro, .news-section {
+	margin-bottom: 20px;
+	background: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.intro > .row, .news-section > .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Intro Section
+============================================= */
+.intro {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+	background: #fff url("../img/slides/4.png") no-repeat top right;
+	background-size: cover;
+}
+.intro .welcome-notes h2 {
+	font-size: 2rem;
+}
+.intro .welcome-notes p {
+	font-size: 1.1rem;
+	font-style: italic;
+}
+
+.intro-link {
+	display: block;
+	padding: 35px 10px;
+	background: rgba(138,91,165, 0.6);
+	color: #fff;
+	text-align: center;
+	transition: background-color 300ms ease-out;
+}
+.intro-link:hover {
+	background: rgba(138,91,165,0.8);
+	color: #fff;
+}
+.intro-link .batch {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 2.5rem;
+}
+.intro-link span {
+	display: block;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+}
+
+
+/* News and Events Section
+============================================= */
+.news-section {
+	padding-top: 0;
+}
+.news-section .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.news, .events {
+	padding-bottom: 3rem;
+}
+.news-section-title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.25rem;
+	background: #FFB64E;
+	color: #fff;
+	padding: 1rem 1.25rem;
+	position: relative;
+	margin-top: 0;
+	margin-left: -0.9375rem;
+	margin-right: -0.9375rem;
+}
+.news-section-title::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 2px;
+	height: 120%;
+	top: -5px;
+	right: 0;
+	z-index: 1;
+	background: #fff;
+	transform: rotate(30deg);
+}
+.events .news-section-title::after {
+	display: none;
+}
+.news-section-title .batch {
+	margin-right: 5px
+}
+.news .archive-link, .events .archive-link {
+	position: absolute;
+	bottom: 0;
+	right: 0.9375rem;
+	margin: 1rem 0 0;
+	padding-left: 3rem;
+	background: #FFB64E;
+	font-size: 0.8rem;
+}
+.news .archive-link::before, .events .archive-link::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: -37px;
+	border-style: solid;
+	border-width: 0 0 37px 37px;
+	border-color: transparent transparent #FFB64E transparent;
+	transition: border-color 300ms ease-out;
+}
+.news .archive-link:hover, .events .archive-link:hover {
+	background: #ffa01a;
+}
+.news .archive-link:hover::before, .events .archive-link:hover::before {
+	border-color: transparent transparent #ffa01a transparent;
+}
+
+.news-list, .events-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.news-list li, .events-list li {
+	padding: 5px 0;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.news-list .date {
+	display: block;
+	margin-top: 3px;
+	font-size: 0.8rem;
+	font-style: italic;
+}
+
+.events-list span {
+	display: block;
+}
+.events-list .date, .events-list .venue {
+	font-size: 0.875rem;
+	font-style: italic;
+}
+.events-list .date {
+	margin-top: 5px;
+}
+.events-list .batch {
+	margin-right: 5px;
+	font-size: 0.7rem;
+}
+
+/* Research Section
+============================================= */
+.research-section {
+	margin-bottom: 20px;
+	padding: 1.25rem;
+	background: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.research-section-title {
+	margin-left: -1.25rem;
+	padding-left: 1.25rem;
+	border-left: 5px solid #ffb64e;
+	color: #FFB64E;
+}
+.researches {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.researches li {
+	padding: 5px;
+	border-bottom: 1px solid #f5f5f5;
+}
+.researches .research-author {
+	display: block;
+}
+.researches .research-author::before {
+	content: "\f170";
+	font-family: "Batch";
+	font-size: inherit;
+	line-height: 1;
+	display: inline-block;
+	margin-right: 5px;
+	font-style: normal
+}
+
+/* Awards Section
+============================================= */
+.awards-section {
+	margin-bottom: 20px;
+	padding: 1.25rem;
+	background: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.awards-section-title {
+	margin-bottom: 0.8125rem;
+	margin-left: -1.25rem;
+	padding-left: 1.25rem;
+	border-left: 5px solid #ffb64e;
+	color: #FFB64E;
+}
+
+
+/* Site Footer
+============================================= */
+.site-footer {
+	background: #8A5BA5;
+	color: #ECF0F1;
+}
+.site-footer .widgets-area {
+	padding-top: 2rem;
+}
+.site-footer .widget {
+	margin-bottom: 1.25rem
+}
+
+.site-footer .widget h4 {
+	color: #fff;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.site-footer .widget ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.site-footer .widget li {
+	padding: 3px 0;
+}
+.site-footer a {
+	color: #ddd;
+}
+.site-footer a:hover {
+	color: #fff;
+}
+.contact-widget li .batch {
+	margin-right: 5px;
+}
+
+.colophon {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+.colophon .copyright p {
+	margin-bottom: 0;
+}
+.colophon .footer-links ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: right;
+}
+.colophon .footer-links li {
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+
+@media only screen and (max-width: 40em) {
+	.news {
+		margin-bottom: 1rem;
+	}
+	.news-section-title::after {
+		display: none;
+	}
+	.colophon, .colophon .footer-links ul {
+		text-align: center;
+	}
+}
+
+
+/* ==========================================
+Halaman KRS
+============================================= */
+.side-menu {
+	margin-bottom: 20px;
+	background: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.student-menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.student-menu li a {
+	position: relative;
+	display: block;
+	padding: 8px 1.25rem;
+	border-bottom: 1px solid #f5f5f5;
+}
+.student-menu li a:hover::before, .student-menu li.active a::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #8A5BA5
+}
+
+.student-menu li ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background: #f5f5f5;
+}
+.student-menu li ul a {
+	padding-left: 2rem;
+}
+
+
+.content-section {
+	margin-bottom: 20px;
+	padding: 1.25rem;
+	background: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.content-section-title {
+	margin-bottom: 0.8125rem;
+	margin-left: -1.25rem;
+	padding-left: 1.25rem;
+	border-left: 5px solid #ffb64e;
+	color: #FFB64E;
+}
+
+@media only screen and (max-width: 40em) {
+	.intro {
+		position: relative;
+		text-align: center;
+	}
+	.intro::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		background: rgba(255,255,255,0.8);
+	}
+	.intro .logout-button {
+		float: none !important;
+	}
+}

@@ -1,0 +1,8 @@
+/* This template was designed and hand-coded by Rizqy Hidayat */
+/* rizqy.me */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Zurb Foundation, jQuery
+  Software: Sublime, Git, Bower

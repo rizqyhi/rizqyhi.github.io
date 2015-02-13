@@ -1,0 +1,301 @@
+<!doctype html>
+<html class="no-js" lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRS &ndash; STIMIK AMIKOM Yogyakarta</title>
+
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,400italic,700|Raleway:400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="outer">
+      <div class="row">
+        <div class="large-12 columns">
+          <nav class="main-nav top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#"><img src="img/logo.png"></a></h1>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+              <ul class="left">
+                <li class="has-dropdown">
+                  <a href="#"><i class="batch" data-icon="&#xF0D1"></i>Akademika</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Program Diploma</a></li>
+                    <li><a href="#">Program Sarjana</a></li>
+                    <li><a href="#">Program Pasca Sarjana</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="kampus"><i class="batch" data-icon="&#xF12D"></i>Kampus</a>
+                  <ul class="dropdown">
+                    <li><a href="">Galeri</a></li>
+                    <li class="has-dropdown">
+                      <a href="kampus">Fasilitas</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Ruang Kuliah</a></li>
+                        <li><a href="#">Laboratorium</a></li>
+                        <li><a href="#">Perpustakaan</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Organisasi Mahasiswa</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="kampus"><i class="batch" data-icon="&#xF050"></i>Riset</a>
+                  <ul class="dropdown">
+                    <li><a href="#" title="Penelitian Pengabdian Mahasiswa">P3M</a></li>
+                    <li><a href="#">Jurnal</a></li>
+                    <li><a href="#">Repository</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><i class="batch" data-icon="&#xF076"></i>Admisi</a></li>
+                <li class="has-dropdown">
+                  <a href="#"><i class="batch" data-icon="&#xF0CA"></i>Tentang</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Sambutan Ketua</a></li>
+                    <li><a href="#">Visi & Misi</a></li>
+                    <li><a href="#">Sejarah</a></li>
+                    <li><a href="#">Prestasi & Penghargaan</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </div>
+    </div>  
+  </header><!-- .site-header -->
+
+  <div class="site-main">
+    <div class="row">
+      <div class="medium-12 columns">
+        <section class="intro">
+          <div class="row">
+            <div class="medium-8 columns">
+              <div class="row">
+                <div class="medium-3 columns">
+                  <img src="img/profile.jpg" alt="John Doe">
+                </div>
+                <div class="medium-9 columns">
+                  <h3>John Doe <span class="label success radius">AKTIF</span></h3>
+                  <h4>14.11.8401</h4>
+                  <p>Dosen Wali: <strong>Walter Brunner, M.T</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="medium-4 columns clearfix">
+              <a href="" class="button right logout-button">Keluar</a>
+            </div>
+          </div>
+        </section><!-- .intro -->
+      </div>
+    </div><!-- .row -->
+
+    <div class="row">
+      <div class="medium-9 medium-push-3 columns">
+        <section class="content-section">
+          <h3 class="content-section-title">Kartu Hasil Studi</h3>
+          <p>Berikut adalah Kartu Hasil Studi (KHS) berdasarkan semester dan Tahun Akademik. Nilai yang belum keluar <i>default</i>-nya E atau kosong.</p>
+    
+          <form action="" method="post">
+            <div class="row collapse">
+              <div class="medium-5 columns">
+                <label for="semester">Semester</label>
+                <select name="semester">
+                  <option value="1" selected="selected">Ganjil</option>
+                  <option value="2">Genap</option>
+                  <option value="3">Remidial</option>
+                  <option value="7">Remidial Ganjil</option>
+                  <option value="8">Remidial Genap</option>
+                </select>
+              </div>
+
+              <div class="medium-5 columns">
+                <label for="tahun">Tahun Akademik</label>
+                <select name="tahun"><option value=""></option>
+                  <option value="2014/2015" selected="selected">2014/2015</option>
+                </select>
+              </div>
+
+              <div class="medium-2 columns">
+                <label>&nbsp;</label>
+                <button type="submit" class="button postfix">Pilih</button>
+              </div>
+            </div>
+          </form>
+    
+          <table width="100%">
+            <thead>
+              <tr>
+                <th width="25">No.</th>
+                <th width="60">Kode</th>
+                <th>Matakuliah</th>
+                <th width="25">SKS</th>
+                <th width="40">Nilai</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>ST001</td>
+                <td>PENDIDIKAN PANCASILA<br />
+                  <em>PANCASILA EDUCATION</em></td>
+                <td>2</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>ST002</td>
+                <td>PENDIDIKAN AGAMA<br />
+                  <em>RELIGION EDUCATION</em></td>
+                <td>2</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>ST008</td>
+                <td>BAHASA INGGRIS I<br />
+                  <em>ENGLISH I</em></td>
+                <td>2</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>ST011</td>
+                <td>MANAJEMEN UMUM<br />
+                  <em>GENERAL MANAGEMENT</em></td>
+                <td>2</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>ST068</td>
+                <td>ALGORITMA DAN PEMROGRAMAN<br />
+                  <em>ALGORITHM AND PROGRAMMING</em></td>
+                <td>4</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>ST070</td>
+                <td>ETIKA PROFESI<br />
+                  <em>PROFESSION ETHICS</em></td>
+                <td>2</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>ST072</td>
+                <td>PENGANTAR  TEKNOLOGI INFORMASI<br />
+                  <em>INFORMATION TECHNOLOGY</em></td>
+                <td>2</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>ST081</td>
+                <td>LOGIKA  INFORMATIKA<br />
+                  <em>LOGIC INFORMATIC</em></td>
+                <td>2</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>ST092</td>
+                <td>ALJABAR LINIER DAN MATRIKS<br />
+                  <em>LINEAR ALGEBRA AND MATRICS</em></td>
+                <td>2</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>ST124</td>
+                <td>KALKULUS<br />
+                  <em>CALCULUS</em></td>
+                <td>4</td>
+                <td>A</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <th colspan="3">Jumlah SKS</th>
+                <th colspan="2">24</th>
+              </tr>
+              <tr>
+              <th colspan="3">Indek Prestasi</th>
+              <th colspan="2">3.92</th></tr>
+            </tfoot>
+          </table>
+
+          <p class="text-center">
+            <a href="http://krs.amikom.ac.id/index.php/cetak/khs/1/2014/2015" target="_blank" class="button info"><i class="batch" data-icon="&#xF130"></i>&nbsp; Cetak KHS</a>
+          </p>
+        </section><!-- .content-section -->
+      </div>
+
+      <div class="medium-3 medium-pull-9 columns">
+        <section class="side-menu">
+          <ul class="student-menu">
+            <li><a href="">Biodata Mahasiswa</a></li>
+            <li><a href="">Jadwal Kuliah</a></li>
+            <li><a href="">Jadwal Ujian</a></li>
+            <li><a href="">Kartu Rencana Studi (KRS)</a>
+              <ul>
+                <li><a href="">Jadwal KRS</a></li>
+                <li><a href="">Pengisian KRS</a></li>
+                <li class="active"><a href="">Kartu Hasil Studi (KHS)</a></li>
+                <li><a href="">Transkrip Nilai</a></li>
+                <li><a href="">Pengisian KRS</a></li>
+                <li><a href="">Cetak KRS</a></li>
+                <li><a href="">Penawaran Mata Kuliah</a></li>
+              </ul>
+            </li>
+            <li><a href="">Dosen</a></li>
+            <li><a href="">E-learning</a></li>
+            <li><a href="">Slip Online</a></li>
+            <li><a href="">Virtual Account</a></li>
+          </ul>
+        </section><!-- .side-menu -->
+      </div>
+    </div><!-- .row -->
+  </div><!-- .site-main -->
+
+  <footer class="site-footer">
+    <div class="colophon">
+      <div class="row">
+        <div class="medium-6 columns copyright">
+          <p>&copy; 2015 STIMIK AMIKOM Yogyakarta</p>
+        </div>
+
+        <div class="medium-6 columns footer-links">
+          <ul>
+            <li><a href="">Peta Situs</a></li>
+            <li><a href="">Kontak</a></li>
+            <li><a href="">F.A.Q</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Top</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- .colophon -->
+  </footer><!-- .site-footer -->
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

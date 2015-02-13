@@ -1,0 +1,21 @@
+{
+  "name": "Amikom Realign",
+  "version": "1.0.0",
+  "authors": [
+    "Rizqy Hidayat <rizqy22@gmail.com>"
+  ],
+  "description": "Redesign and realign of AMIKOM's old site. This project was part of Amikom Web Competition 2015.",
+  "license": "private",
+  "homepage": "http://amikom.ac.id",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "zurb/bower-foundation#~5.5.1"
+  }
+}
